@@ -17,4 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+iiii::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
 
