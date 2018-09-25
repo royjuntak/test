@@ -19,6 +19,14 @@ Route::get('admin', function () {
     return view('admin');
 });
 
+Route::get('board', function () {
+    return view('board');
+});
+
+Route::get('homes', function () {
+    return view('homes');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

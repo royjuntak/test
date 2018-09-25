@@ -11,10 +11,12 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href={{ asset ("public/css/app.css") }} rel="stylesheet">
+    <link href={{ asset ("public/css/custom.css") }} rel="stylesheet">
+    <link href={{ asset ("public/css/font-awesome.min.css") }} rel="stylesheet">
 
+    @yield('style')
+    
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -84,7 +86,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
-    <script src="/js/custom.js"></script>
+    <script src={{ asset ("public/js/app.js") }}></script>
+    <script src={{ asset ("public/js/custom.js") }}></script>
 </body>
 </html>
